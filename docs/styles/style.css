@@ -2,8 +2,8 @@
   --color_primary: #0a0a0a;
   --color_secundary: #cfb8eb;
   --dark_purple:#53167c;
-  --light_green:#3b66a5;
-  --light_green-2:#3b66a5;
+  --light_blue:#3b66a5;
+  --light_blue-2:#3b66a5;
   --green:#26c526;
   --color_light:#fff;
   --red:#e24d4b;
@@ -61,7 +61,7 @@ h5 {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: var(--light_green);
+  background-color: var(--light_blue);
   z-index: 0;
 }
 .circulos .circulo {
@@ -387,7 +387,7 @@ h5 {
   color: var(--color_secundary);
 }
 .wraper {
-  background-color: var(--light_green-2);
+  background-color: var(--light_blue-2);
   padding: 1em;
   border-radius: 12px;
   animation-delay: 3s;
@@ -404,7 +404,7 @@ h5 {
   position: absolute;
   right: 0;
   width: 0%;
-  background-color: var(--light_green-2);
+  background-color: var(--light_blue-2);
   border-left: 0.065rem solid var(--color_light);
 
   animation: typewriter 3s steps(19);
@@ -467,10 +467,10 @@ h5 {
   color: var(--color_primary);
 }
 .span-web a{
-  color: var(--dark_purple);
+  color: var(--light_blue);
 }
 .span-git-hub a {
-  color: var(--dark_purple);
+  color: var(--light_blue);
 }
 
 .unders-score{
