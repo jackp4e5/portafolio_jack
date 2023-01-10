@@ -371,6 +371,9 @@ h5 {
 .trabajos .h2 {
   margin-bottom: 2rem;
 }
+.about{
+  overflow: hidden;
+}
 .about .h2 {
   margin-bottom: 1rem;
 }
