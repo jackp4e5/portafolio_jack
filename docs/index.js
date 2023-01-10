@@ -4,26 +4,29 @@ const element4 = document.querySelector(".wraper-p");
 const element3 = document.querySelector(".about-me");
 const element2 = document.querySelector(".div-wraper ");
 const element1 = document.querySelector(".animation");
-
-const ubucacion = element1.getBoundingClientRect();
+const hamburger = document.querySelector(".hamburger");
+const close = document.querySelector(".svg-close");
+const hamburgerSvg = document.querySelector(".svg-hamburger");
+const nav = document.querySelector(".nav");
+const ubucacion = element4.getBoundingClientRect();
 
 console.log(ubucacion);
 
 const trabajos = document.querySelector(".trabajos");
 const about = document.querySelector(".about");
 let scroll;
-const hamburger = document
-  .querySelector(".hamburger")
-  .addEventListener("click", () => {
-    const nav = document.querySelector(".nav");
-    nav.classList.toggle("active");
-  });
+
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  close.classList.toggle("active");
+  hamburgerSvg.classList.toggle("inactive");
+});
 
 window.addEventListener("scroll", () => {
   scroll = Number(window.scrollY.toFixed(0));
-  if (scroll > 1100 && scroll < 1350) {
+  if (scroll > 1000 && scroll < 1150) {
     element4.classList.add("transform-y-2");
-  } else if (scroll > 1000 && scroll < 1150) {
+  } else if (scroll > 950 && scroll < 1000) {
     element3.classList.add("transform-x");
   } else if (scroll > 450 && scroll < 500) {
     element2.classList.add("transform-y");

@@ -1,0 +1,101 @@
+.header{
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+}
+.section__main {
+    width: 90%;
+    max-width: 1600px ;
+    margin: 0 auto;
+}
+.section__works {
+    margin-top: 3em;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section__heading {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.section__wraper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.section__paragraph {
+    margin-bottom: 2rem ;
+}
+.works__img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.works__figure{
+    height: 100%;
+    width: 100%;
+}
+.works__grid{
+    display: grid;
+    gap: 2em;
+    
+}
+
+@media( min-width: 768px){
+    .works__grid{
+       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+       
+    }
+}
+.works__article{
+    position: relative;
+}
+
+
+.works__h4{
+    width: 100%;
+    height: 100%;
+    color: var(--color_primary);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+   
+    font-style: italic;
+    font-weight: 100;
+    background-color: hsl(0deg 0% 2% / 50%);
+    backdrop-filter: blur(16px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    opacity: 0;
+    transform: translateZ(1) scale(0);
+    transition: opacity 1s ease, transform 1s;
+}
+
+.works__article:hover .works__h4{
+    opacity: 1;
+    transform: translateZ(1) scale(1);
+}
+
+.works__links{
+    color: white;
+}
+
+.span-web a {
+    color: white;
+  }
+  .span-git-hub a {
+    color: white;
+  }
+
+  .span-p {
+    color:red;
+}
