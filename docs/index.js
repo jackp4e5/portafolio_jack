@@ -24,9 +24,9 @@ hamburger.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   scroll = Number(window.scrollY.toFixed(0));
-  if (scroll > 1000 && scroll < 1150) {
+  if (scroll > 1100 && scroll < 1350) {
     element4.classList.add("transform-y-2");
-  } else if (scroll > 950 && scroll < 1000) {
+  } else if (scroll > 1000 && scroll < 1150) {
     element3.classList.add("transform-x");
   } else if (scroll > 450 && scroll < 500) {
     element2.classList.add("transform-y");

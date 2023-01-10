@@ -248,7 +248,7 @@ h5 {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--color_light);
- 
+ overflow: hidden;
   /* animation: aparecer 3s ease both; */
 }
 .animation {
@@ -487,7 +487,7 @@ h5 {
 }
 
 .dpb {
-  display: block;
+  display: block; 
 }
 
 .span-p {
