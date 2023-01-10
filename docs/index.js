@@ -10,8 +10,6 @@ const hamburgerSvg = document.querySelector(".svg-hamburger");
 const nav = document.querySelector(".nav");
 const ubucacion = element4.getBoundingClientRect();
 
-console.log(ubucacion);
-
 const trabajos = document.querySelector(".trabajos");
 const about = document.querySelector(".about");
 let scroll;
@@ -40,6 +38,8 @@ trabajos.addEventListener("click", () => {
   element2.classList.add("transform-y");
 });
 about.addEventListener("click", () => {
+  element1.classList.add("aparecer2");
+  element2.classList.add("transform-y");
   element3.classList.add("transform-x");
   element4.classList.add("transform-y-2");
 });

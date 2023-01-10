@@ -217,7 +217,7 @@ h5 {
 }
 
 .list {
-  padding: 1em 0;
+  padding: 1em 0 ;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
@@ -227,6 +227,7 @@ h5 {
 
 @media (min-width: 768px) {
   .list {
+    padding: 1em ;
     flex-flow: row wrap;
   }
 }
@@ -435,7 +436,7 @@ h5 {
   background-color: var(--light_blue-2);
   border-left: 0.065rem solid var(--color_light);
 
-  animation: typewriter 3s steps(19);
+  animation: typewriter 3s steps(19) infinite alternate;
 }
 
 @keyframes typewriter {
