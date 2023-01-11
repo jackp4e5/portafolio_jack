@@ -6,13 +6,15 @@
   --light_blue-2: #3b66a5;
   --green: #26c526;
   --color_light: #fff;
-  --red: #e24d4b;
-  --red_2:#eb233c;
+  --red: #ffc93c;
+  /* --red: #e24d4b; */
+  --red_2: #ffc93c;
+  /* --red_2:#eb233c; */
   --tipografia_primary: "Playfair Display", serif;
   --tipografia_secondary: "Inter", sans-serif;
 }
 
-* { 
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -143,6 +145,7 @@ h5 {
   align-items: center;
   gap: 1em;
   position: fixed;
+  box-shadow: 0px -4px 9px var(--color_light);
   z-index: 45;
 }
 
@@ -166,7 +169,7 @@ h5 {
 
 .svg-hamburger {
   width: 100%;
-  height: 100%;  
+  height: 100%;
 }
 
 .svg-close {
@@ -174,10 +177,10 @@ h5 {
   height: 100%;
   display: none;
 }
-.active{
+.active {
   display: block;
 }
-.inactive{
+.inactive {
   display: none;
 }
 
@@ -217,7 +220,7 @@ h5 {
 }
 
 .list {
-  padding: 1em 0 ;
+  padding: 1em 0;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
@@ -227,7 +230,7 @@ h5 {
 
 @media (min-width: 768px) {
   .list {
-    padding: 1em ;
+    padding: 1em;
     flex-flow: row wrap;
   }
 }
@@ -249,7 +252,8 @@ h5 {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--color_light);
- overflow: hidden;
+  overflow: hidden;
+
   /* animation: aparecer 3s ease both; */
 }
 .animation {
@@ -355,23 +359,23 @@ h5 {
   transform: translateZ(1) scale(1);
 }
 
-.button_a{
+.button_a {
   margin-top: 1.5rem;
   margin-bottom: 10px;
   padding: 0.875rem 1.875rem;
   box-shadow: 0px 0px 5px rgb(240 234 234 / 30%);
   border-radius: 0.5rem;
   text-transform: capitalize;
-  transition:  background-color .5s ease;
+  transition: background-color 0.5s ease;
   cursor: pointer;
 }
-.button_a:hover{
-  background-color: rgba(226, 12, 226, 0.3) ;
+.button_a:hover {
+  background-color: rgba(226, 12, 226, 0.3);
 }
 .trabajos .h2 {
   margin-bottom: 2rem;
 }
-.about{
+.about {
   overflow: hidden;
 }
 .about .h2 {
@@ -491,7 +495,7 @@ h5 {
 }
 
 .dpb {
-  display: block; 
+  display: block;
 }
 
 .span-p {
@@ -536,9 +540,9 @@ h5 {
 .container__lateral::after {
   content: "";
   width: 2px;
-  height: 6.25rem;
+  height: 12.5rem;
   display: block;
-  background-color:var(--red_2);
+  background-color: var(--red_2);
   margin: 0 auto;
 }
 .side__left {
@@ -551,16 +555,15 @@ h5 {
   font-size: 1.2rem;
 }
 
-@media( min-width: 768px){
+@media (min-width: 768px) {
   .side__left {
     display: block;
-   
   }
   .side__right {
     display: block;
-  } 
+  }
 }
-.side__right a {  
+.side__right a {
   margin-bottom: 0.625rem;
   writing-mode: vertical-lr;
 }
